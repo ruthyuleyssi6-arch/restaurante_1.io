@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Sabor & Tradición</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="cabecera">
+        <nav class="navegacion">
+            <div class="logo">
+                <i class="fa-solid fa-utensils"></i>
+                <span>Sabor & Tradición</span>
+            </div>
+            <div class="buscador">
+                <input type="text" id="buscar" placeholder="Buscar platos, eventos...">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <ul class="menu" id="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#carta">Carta de Platos</a></li>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="#reserva" class="btn-reserva">Reserva tu Mesa</a></li>
+                <li><a href="#contacto">Comunícate</a></li>
+            </ul>
+            <button class="menu-movil" id="menuMovil">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <section class="portada" id="inicio">
+        <div class="contenido-portada">
+            <h1>Bienvenidos a Sabor & Tradición</h1>
+            <p>Los mejores sabores preparados con pasión e ingredientes frescos de nuestra tierra</p>
+            <div class="botones">
+                <a href="#carta" class="btn-principal">Ver Nuestra Carta</a>
+                <a href="#reserva" class="btn-secundario">Reservar Ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="seccion" id="carta">
+        <h2>Nuestra Carta de Platos</h2>
+        <div class="contenedor-platos">
+            <div class="plato">
+                <i class="fa-solid fa-bowl-food"></i>
+                <h3>Lomo Saltado</h3>
+                <p>Carne tierna con verduras, papas fritas y arroz</p>
+                <span>S/ 35.00</span>
+            </div>
+            <div class="plato">
+                <i class="fa-solid fa-fish"></i>
+                <h3>Ceviche Clásico</h3>
+                <p>Pescado fresco marinado en limón, ají y cebolla</p>
+                <span>S/ 32.00</span>
+            </div>
+            <div class="plato">
+                <i class="fa-solid fa-drumstick-bite"></i>
+                <h3>Pollo a la Brasa</h3>
+                <p>Receta tradicional con papas y ensalada</p>
+                <span>S/ 28.00</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="seccion fondo-oscuro" id="eventos">
+        <h2>Próximos Eventos</h2>
+        <div class="contenedor-eventos">
+            <div class="evento">
+                <h3>Noches de Música en Vivo</h3>
+                <p>Todos los sábados desde las 8:00 PM</p>
+            </div>
+            <div class="evento">
+                <h3>Celebraciones Especiales</h3>
+                <p>Espacio ideal para cumpleaños y reuniones</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="seccion" id="reserva">
+        <h2>Reserva tu Mesa</h2>
+        <form class="formulario-reserva" id="formReserva">
+            <input type="text" placeholder="Tu Nombre" required>
+            <input type="tel" placeholder="Teléfono" required>
+            <input type="date" required>
+            <input type="time" required>
+            <input type="number" placeholder="Cantidad de personas" min="1" max="20" required>
+            <button type="submit" class="btn-principal">Enviar Reserva</button>
+        </form>
+    </section>
+
+    <section class="seccion fondo-oscuro" id="contacto">
+        <h2>Comunícate con Nosotros</h2>
+        <div class="datos-contacto">
+            <p><i class="fa-solid fa-location-dot"></i> Urb. luis vallejos santoni, Cusco, Perú</p>
+            <p><i class="fa-solid fa-phone"></i> +51 933 713 061</p>
+            <p><i class="fa-solid fa-envelope"></i> ruthyuleyssi6@gmail.com</p>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="pie">
+        <p>&copy; 2026 Restaurante Sabor & Tradición | Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
