@@ -3,113 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurante Sabor & Tradición</title>
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Restaurante Sabor Casero - Inicio</title>
+    <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Encabezado y navegación */
+        header {
+            background-color: #8B4513; /* Marrón, color cálido */
+            color: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #FFD700; /* Dorado al pasar el mouse */
+        }
+
+        /* Sección principal (Portada) */
+        .portada {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 5%;
+            margin-top: 60px; /* Para compensar el menú fijo */
+        }
+
+        .portada h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+
+        .portada p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            max-width: 800px;
+        }
+
+        .boton {
+            background-color: #FF8C00;
+            color: white;
+            padding: 0.8rem 2rem;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .boton:hover {
+            background-color: #e67e00;
+        }
+
+        /* Sección de características */
+        .caracteristicas {
+            padding: 3rem 5%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            background-color: #f9f9f9;
+        }
+
+        .caracteristica {
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        .caracteristica h3 {
+            color: #8B4513;
+            margin-bottom: 1rem;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        /* Diseño responsivo para celulares */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .portada h1 {
+                font-size: 2.2rem;
+            }
+            nav a {
+                margin: 0 0.7rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header class="cabecera">
-        <nav class="navegacion">
-            <div class="logo">
-                <i class="fa-solid fa-utensils"></i>
-                <span>Sabor & Tradición</span>
-            </div>
-            <div class="buscador">
-                <input type="text" id="buscar" placeholder="Buscar platos, eventos...">
-                <button><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
-            <ul class="menu" id="menu">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#carta">Carta de Platos</a></li>
-                <li><a href="#eventos">Eventos</a></li>
-                <li><a href="#reserva" class="btn-reserva">Reserva tu Mesa</a></li>
-                <li><a href="#contacto">Comunícate</a></li>
-            </ul>
-            <button class="menu-movil" id="menuMovil">
-                <i class="fa-solid fa-bars"></i>
-            </button>
+    <!-- Menú de navegación -->
+    <header>
+        <div class="logo">Restaurante Sabor Casero</div>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Menú</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Reservas</a>
+            <a href="#">Contacto</a>
         </nav>
     </header>
 
-    <section class="portada" id="inicio">
-        <div class="contenido-portada">
-            <h1>Bienvenidos a Sabor & Tradición</h1>
-            <p>Los mejores sabores preparados con pasión e ingredientes frescos de nuestra tierra</p>
-            <div class="botones">
-                <a href="#carta" class="btn-principal">Ver Nuestra Carta</a>
-                <a href="#reserva" class="btn-secundario">Reservar Ahora</a>
-            </div>
+    <!-- Sección principal - PORTADA -->
+    <section class="portada">
+        <h1>Los Mejores Platos, Hechos con Amor</h1>
+        <p>Disfruta de la comida tradicional y casera, preparada con ingredientes frescos y de la mejor calidad, en un ambiente cálido y familiar.</p>
+        <a href="#" class="boton">Ver Nuestro Menú</a>
+    </section>
+
+    <!-- Sección adicional (para dar más contenido) -->
+    <section class="caracteristicas">
+        <div class="caracteristica">
+            <h3>Ingredientes Frescos</h3>
+            <p>Seleccionamos cada día los mejores productos locales para garantizar sabor y frescura en cada bocado.</p>
+        </div>
+        <div class="caracteristica">
+            <h3>Recetas Tradicionales</h3>
+            <p>Seguimos recetas heredadas de generación en generación, manteniendo el sabor auténtico de nuestra cocina.</p>
+        </div>
+        <div class="caracteristica">
+            <h3>Atención Especial</h3>
+            <p>Nuestro equipo está listo para brindarte una experiencia única y hacerte sentir como en casa.</p>
         </div>
     </section>
 
-    <section class="seccion" id="carta">
-        <h2>Nuestra Carta de Platos</h2>
-        <div class="contenedor-platos">
-            <div class="plato">
-                <i class="fa-solid fa-bowl-food"></i>
-                <h3>Lomo Saltado</h3>
-                <p>Carne tierna con verduras, papas fritas y arroz</p>
-                <span>S/ 35.00</span>
-            </div>
-            <div class="plato">
-                <i class="fa-solid fa-fish"></i>
-                <h3>Ceviche Clásico</h3>
-                <p>Pescado fresco marinado en limón, ají y cebolla</p>
-                <span>S/ 32.00</span>
-            </div>
-            <div class="plato">
-                <i class="fa-solid fa-drumstick-bite"></i>
-                <h3>Pollo a la Brasa</h3>
-                <p>Receta tradicional con papas y ensalada</p>
-                <span>S/ 28.00</span>
-            </div>
-        </div>
-    </section>
-
-    <section class="seccion fondo-oscuro" id="eventos">
-        <h2>Próximos Eventos</h2>
-        <div class="contenedor-eventos">
-            <div class="evento">
-                <h3>Noches de Música en Vivo</h3>
-                <p>Todos los sábados desde las 8:00 PM</p>
-            </div>
-            <div class="evento">
-                <h3>Celebraciones Especiales</h3>
-                <p>Espacio ideal para cumpleaños y reuniones</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="seccion" id="reserva">
-        <h2>Reserva tu Mesa</h2>
-        <form class="formulario-reserva" id="formReserva">
-            <input type="text" placeholder="Tu Nombre" required>
-            <input type="tel" placeholder="Teléfono" required>
-            <input type="date" required>
-            <input type="time" required>
-            <input type="number" placeholder="Cantidad de personas" min="1" max="20" required>
-            <button type="submit" class="btn-principal">Enviar Reserva</button>
-        </form>
-    </section>
-
-    <section class="seccion fondo-oscuro" id="contacto">
-        <h2>Comunícate con Nosotros</h2>
-        <div class="datos-contacto">
-            <p><i class="fa-solid fa-location-dot"></i> Urb. luis vallejos santoni, Cusco, Perú</p>
-            <p><i class="fa-solid fa-phone"></i> +51 933 713 061</p>
-            <p><i class="fa-solid fa-envelope"></i> ruthyuleyssi6@gmail.com</p>
-            <div class="redes">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <footer class="pie">
-        <p>&copy; 2026 Restaurante Sabor & Tradición | Todos los derechos reservados</p>
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2026 Restaurante Sabor Casero | Cusco, Perú | Todos los derechos reservados</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
